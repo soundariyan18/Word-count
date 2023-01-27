@@ -1,52 +1,37 @@
-# Word-count
+## Word-count
 ## AIM:
 To write a python program for getting the word count from a text.
-## EQUIPEMENT'S REQUIRED: 
-PC
-Anaconda - Python 3.7
-## ALGORITHM: 
-### Step 1:
-import sys library
 
-### Step 2:
-initialize a variable count = {} 
- 
-### Step 3: 
-open the file using open)sys.argv[1],'r') as f:
-
-### Step 4:
-use for loops  
-
-### Step 5: 
-use if else to count the words
-
-### Step 6:
-end the program 
-
+## EQUIPEMENT'S REQUIRED:
+PC Anaconda - Python 3.7
+## ALGORITHM:
+## Step 1:
+Get the file name as the input from the user
+## Step 2:
+Open the file using the withopen function
+## Step 3:
+Use for loop and split function function
+## Step 4:
+Find the length using the num_words += len(words)
+## bStep 5:
+Print the program
+## Step 6:
+End the progrm
 ## PROGRAM:
-
-Developed by: Soundariyan M N
-
-Ref: 22008347
-
+Word count
+Name: Soundariyan M N
+Register no: 22008347
 ```python
-import sys
-count = {}
-with open(sys.argv[1], 'r') as f:
-    for line in f:
-        for word in line.split():
-            if word not in count:
-                count[word]= 1
-             else:
-                count[word] +=1
-print(count)
-f.close() 
-```                  
-
-### OUTPUT:
-![model](output.png)
-
-
-
+fname = input('Enter file name: ')
+num_words = 0
+with open(fname, 'r') as f:
+for line in f:
+words = line.split()
+num_words += len(words)
+print('Number of words: ', num_words)
+```
+## OUTPUT:
+![model](output1.png)
 ## RESULT:
 Thus the program is written to find the word count from a text.
+##

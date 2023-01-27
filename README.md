@@ -18,9 +18,11 @@ Print the program
 ## Step 6:
 End the progrm
 ## PROGRAM:
+```
 Word count
 Name: Soundariyan M N
 Register no: 22008347
+```
 ```python
 fname = input('Enter file name: ')
 num_words = 0
